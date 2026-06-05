@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #552583;
+    padding: 40px;
+}
+
+.equipment {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: #fdb927;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.equipment__header {
+    margin-bottom: 30px;
+}
+
+.equipment__title {
+    font-size: 32px;
+}
+
+.equipment__add {
+    margin-bottom: 40px;
+}
+
+.equipment__subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.equipment-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.equipment-form__input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.equipment-form__select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.equipment-form__button {
+    background: #552583;
+    color: #fdb927;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.equipment-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.equipment-filters__select {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.equipment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.equipment-table th,
+.equipment-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.equipment-table__delete {
+    background: #552583;
+    color: #fdb927;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .equipment-form {
+        flex-direction: column;
+    }
+
+    .equipment-form__input,
+    .equipment-form__select,
+    .equipment-form__button,
+    .equipment-filters__select {
+        width: 100%;
+    }
+
+    .equipment-filters {
+        flex-direction: column;
+    }
+
+    .equipment-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .equipment__title {
+        font-size: 24px;
+    }
+
+    .equipment__subtitle {
+        font-size: 20px;
+    }
+}
